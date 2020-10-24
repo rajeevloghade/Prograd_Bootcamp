@@ -1,0 +1,34 @@
+
+
+
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 700px;
+    padding: 50px;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+
+}
+
+.container > .row{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.name{
+    font-size: xx-large;
+}
+
+.profile-icon{
+    border-radius: 40px;
+}
