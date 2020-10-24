@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
-
-
+body{
+    background: #9127ef;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
 
 .container{
     background-color: white;
@@ -9,6 +17,7 @@
     border-radius: 20px;
     width: 700px;
     padding: 50px;
+    align-self: center;
 }
 
 .row{
@@ -17,12 +26,14 @@
 
 .col{
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container > .row{
+    width: 100%;
     justify-content: space-evenly;
-    display: flex;
 }
 
 .name{
@@ -30,5 +41,29 @@
 }
 
 .profile-icon{
-    border-radius: 40px;
+    border-radius: 50%;
+    border: 2px solid bisque;
+}
+
+.round-runs{
+    font-size: xx-large;
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.score{
+    font-size: xx-large;
+}
+
+.score > span{
+    font-size: 0 5px;
+}
+
+#strike-button{
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#c02425,#f0cb35);  
+    font-size: large;
+    font-weight: bold;
+    width: 300px;
 }

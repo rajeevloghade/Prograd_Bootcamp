@@ -10,11 +10,9 @@
 </head>
 <body>
     <div class="container">
-    <div class="row">
-       
-    </div>
+    <div class="row">       
     <div class="col">
-        <img class="profile-icon" src="./Chennai-Super-Kings-Logo-PNG-Image-.png"  height="150px",  width="150px">
+        <img class="profile-icon" src="./Chennai-Super-Kings-Logo-PNG-Image-.png"  height="140px",  width="140px">
         <span class="name" id="team-1-name">CSK</span>
         <div class="row round-runs" id="team-1-round-runs">
             <span class="col">-</span>
@@ -26,11 +24,13 @@
         </div>
     </div>
     <div class="col">
-        <span>0</span>
-        <span>-</span>
-        <span>1</span>
+        <div class="row score">
+            <span id="team-1-score">0</span>
+            <span>-</span>
+            <span id="team-2-score">0</span>
+        </div>
     </div>
-    <div class="col"><img class="profile-icon" src="./download.png" height="130px",  width="150px"></div>
+    <div class="col"><img class="profile-icon" src="./download.png" height="140px",  width="140px">
     <span class="name" id="team-2-name">MI</span>
     <div class="row round-runs" id="team-2-round-runs">
         <span class="col">-</span>
@@ -39,7 +39,13 @@
         <span class="col">-</span>
         <span class="col">-</span>
         <span class="col">-</span>
+    </div>    
     </div>
     </div>
+    <div class="row">
+        <button id="strike-button">BAT</button>
+    </div>
+    <div class="row" id="result" hidden></div>
+</div>
 </body>
 </html>
